@@ -3,18 +3,21 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "start": "npm run build && serve build",
-    "dev": "next dev",
+    "dev": "next",
     "build": "next build",
-    "develop": "next start"
+    "start": "next start -p $PORT"
   },
+ 
   "dependencies": {
     "@material-ui/core": "^4.11.0",
     "@material-ui/icons": "^4.9.1",
     "next": "9.5.0",
     "react": "16.13.1",
     "react-dom": "16.13.1",
-    "react-use": "^15.3.3",
-    "serve": "^11.3.2"
+    "react-use": "^15.3.3"
+  },
+  "engines": {
+    "node": "12.x" ,
+    "npm":"6.x"
   }
 }
